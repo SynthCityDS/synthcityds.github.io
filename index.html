@@ -23,13 +23,14 @@
 								<ul>
 									<li><a class="icon fa-home" href="index.html"><span>SynthCity Dataset</span></a></li>
 									<li>
-										<a href="#" class="icon fa-cloud-download"><span>Download</span></a>
+									<li><a href="download.html" class="icon fa-cloud-download"><span>Download</span></a></li>
+										<!--<a href="#" class="icon fa-cloud-download"><span>Download</span></a>
 										<ul>
 											<li><a href="#">Full dataset</a></li>
 											<li><a href="#">Reduced dataset</a></li>
 											<li><a href="#">Test data</a></li>
 										</ul>
-									</li>
+									</li>-->
 									<li><a class="icon fa-newspaper-o" href="paper.html"><span>Paper</span></a></li>
 									<li><a class="icon fa-address-book-o" href="people.html"><span>People</span></a></li>
 								</ul>
@@ -54,7 +55,9 @@
 										<header>
 											<h3>Full semantic labels</h3>
 										</header>
-										<p>Perfect ground truth semantic labels for 9 classes.</p>
+										<p>Due to the nature of synthetically generating ground truth data, each simulated laser beam returns
+											the exact object id that it has hit. This allows us to obtain perfect, non-ambiguous labels. We categories
+										  each object into one of nine classes.</p>
 									</section>
 
 							</div>
@@ -67,7 +70,7 @@
 										<header>
 											<h3>Realistic</h3>
 										</header>
-										<p>A realistic looking synthetic point cloud.</a>.</p>
+										<p>Our dataset starts from a highly realistic 3D model. The dataset is rich in both geometry and colour.</a></p>
 									</section>
 
 							</div>
@@ -79,7 +82,8 @@
 										<header>
 											<h3>Full RGB colour</h3>
 										</header>
-										<p>Our dataset contains RGB data for each point as well as time and end of line.</p>
+										<p>Our dataset contains RGB data for each point. We also provide the gps time for each individual measurement
+										   as well as a binary end of line indicator to enable single scan line processing easily.</p>
 									</section>
 
 							</div>
@@ -91,12 +95,11 @@
 				<section id="main">
 					<div class="container">
 						<div class="row">
-
 							<h3>General information about SynthCity</h3>
 							<p>With deep learning becoming a more prominent approach for automatic classification of 3-Dimension point cloud data, a key bottleneck is the amount of high quality training data, especially when compared to that available for 2-dimensional images. One potential solution is the use of synthetic data for pre-training networks, however the ability for models to generalise from synthetic data to real world data has been poorly studied for point clouds. Despite this, a huge wealth of 3D virtual environments exist, which can be exploited. We therefore argue that research in this domain would be hugely useful. In this paper we present SynthCity an open dataset to help aid research. SynthCity is a 367.9M point synthetic full colour Mobile Laser Scanning point cloud. Every point is labelled from one of nine categories. We generate our point cloud in a typical Urban/Suburban environment using the Blensor plugin for Blender.</p>
 
 							<!-- Table -->
-
+							<h3> Number of points per class and area. </h3>
 							<div class="table-custom">
 								<div class="table-header">
 									<div class="header__item"><a id="building" class="filter__link" >area</a></div>
@@ -226,16 +229,16 @@
 										<div class="table-data">5</div>
 									</div>
 									<div class="table-row">
-										<div class="table-data">Total</div>
-										<div class="table-data">97,973,820</div>
-										<div class="table-data">4,788,775</div>
-										<div class="table-data">12,088,077</div>
-										<div class="table-data">6,206,312</div>
-										<div class="table-data">215,870,472</div>
-										<div class="table-data">21,986,017</div>
-										<div class="table-data">1,469,766</div>
-										<div class="table-data">5,907,347</div>
-										<div class="table-data">1,636,443</div>
+										<div class="table-data"><b>Total</b></div>
+										<div class="table-data"><b>97,973,820</b></div>
+										<div class="table-data"><b>4,788,775</b></div>
+										<div class="table-data"><b>12,088,077</b></div>
+										<div class="table-data"><b>6,206,312</b></div>
+										<div class="table-data"><b>21,986,017</b></div>
+										<div class="table-data"><b>215,870,472</b></div>
+										<div class="table-data"><b>1,469,766</b></div>
+										<div class="table-data"><b>5,907,347</b></div>
+										<div class="table-data"><b>1,636,443</b></div>
 									</div>
 								</div>
 							</div>
@@ -245,6 +248,9 @@
 								<div id="content" class="col-8 col-12-medium">
 									<!-- Post -->
 										<article class="box post">
+											<header>
+												<h2> </h2>
+											</header>
 											<header>
 												<h2> Some more information about the dataset </h2>
 											</header>
@@ -270,27 +276,22 @@
 											<ul class="divided">
 												<li>
 
-													<!-- Excerpt -->
-														<article class="box excerpt">
-															<header>
-																<span class="date">July 30</span>
-																<h3><a href="#">Benchmark Dataset Available</a></h3>
-															</header>
-															<p>The benchmark dataset is now live.</p>
-														</article>
-
-												</li>
-												<li>
+												<header>
+													<h2> </h2>
+												</header>
+												<header>
+													<h2> Updates </h2>
+												</header>
 
 													<!-- Excerpt -->
 														<article class="box excerpt">
 															<header>
-																<span class="date">July 28</span>
-																<h3><a href="#">Dataset Realised</a></h3>
+																<span class="date">July 15 2019</span>
+																<h3><a href="download.html">Dataset Download Available</a></h3>
 															</header>
-															<p>SynthCity v1.0 is now publically available for download. If you use our dataset in your research please consider citing our white paper.</p>
+															<p>The SynthCity is now publically available for download.
+																 If you use our dataset in your research please consider citing our white paper.</p>
 														</article>
-
 												</li>
 											</ul>
 										</section>
