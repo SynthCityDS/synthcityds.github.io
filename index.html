@@ -23,13 +23,6 @@
 								<ul>
 									<li><a class="icon fa-home" href="index.html"><span>SynthCity Dataset</span></a></li>
 									<li><a href="download.html" class="icon fa-cloud-download"><span>Download</span></a></li>
-										<!--<a href="#" class="icon fa-cloud-download"><span>Download</span></a>
-										<ul>
-											<li><a href="#">Full dataset</a></li>
-											<li><a href="#">Reduced dataset</a></li>
-											<li><a href="#">Test data</a></li>
-										</ul>
-									</li>-->
 									<li><a class="icon fa-newspaper-o" href="paper.html"><span>Paper</span></a></li>
 									<li><a class="icon fa-address-book-o" href="people.html"><span>People</span></a></li>
 								</ul>
@@ -69,7 +62,8 @@
 										<header>
 											<h3>Realistic</h3>
 										</header>
-										<p>Our dataset starts from a highly realistic 3D model. The dataset is rich in both geometry and colour.</a></p>
+										<p>Our dataset starts from a highly realistic 3D model. A high poly count is chosen for realistic
+											 detailed geometry. Rich texture maps give the model realistic spectral properties.</a></p>
 									</section>
 
 							</div>
@@ -84,7 +78,6 @@
 										<p>Our dataset contains RGB data for each point. We also provide the gps time for each individual measurement
 										   as well as a binary end of line indicator to enable single scan line processing easily.</p>
 									</section>
-
 							</div>
 						</div>
 					</div>
@@ -95,7 +88,7 @@
 					<div class="container">
 						<div class="row">
 							<h3>General information about SynthCity</h3>
-							<p>With deep learning becoming a more prominent approach for automatic classification of 3-Dimension point cloud data, a key bottleneck is the amount of high quality training data, especially when compared to that available for 2-dimensional images. One potential solution is the use of synthetic data for pre-training networks, however the ability for models to generalise from synthetic data to real world data has been poorly studied for point clouds. Despite this, a huge wealth of 3D virtual environments exist, which can be exploited. We therefore argue that research in this domain would be hugely useful. In this paper we present SynthCity an open dataset to help aid research. SynthCity is a 367.9M point synthetic full colour Mobile Laser Scanning point cloud. Every point is labelled from one of nine categories. We generate our point cloud in a typical Urban/Suburban environment using the Blensor plugin for Blender.</p>
+							<p>With deep learning becoming a more prominent approach for automatic classification of three-dimensional point cloud data, a key bottleneck is the amount of high quality training data, especially when compared to that available for two-dimensional images. One potential solution is the use of synthetic data for pre-training networks, however the ability for models to generalise from synthetic data to real world data has been poorly studied for point clouds. Despite this, a huge wealth of 3D virtual environments exist, which if proved effective can be exploited. We therefore argue that research in this domain would be hugely useful. In this paper we present SynthCity an open dataset to help aid research. SynthCity is a 367.9M point synthetic full colour Mobile Laser Scanning point cloud. Every point is labelled from one of nine categories. We generate our point cloud in a typical Urban/Suburban environment using the BlenSor plugin for Blender.</p>
 
 							<!-- Table -->
 							<h3> Number of points per class and area. </h3>
@@ -262,19 +255,15 @@
 												<h2> </h2>
 											</header>
 											<header>
-												<h2> Some more information about the dataset </h2>
+												<h2> Further information</h2>
 											</header>
 											<!--<a href="#" class="image featured"><img src="images/city4.jpg" alt="" /></a> -->
-											<h3>Information about the classes etc...</h3>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-											Curabitur leo nibh, rutrum eu malesuada in tristique.</p>
+											<h3>Future iterations</h3>
+											<p>Whilst SynthCity has been rendered to simulate a Mobile Laser Scanner (MLS). Blensor supports the ability
+												scan with a range of scanners, most notably a simulated Velodyne scanner. Such scanners are commonly used
+												for both MLS systems and autonomous vehicles. Re-rendering with a Velodyne scanner would only require the
+												AWS instances to be run again to produce the equivalent point cloud. If you are interested in sponsoring further
+											 rendering of the synthetic city please contact us using the details at the bottom of this page. </p>
 										</article>
 								</div>
 
