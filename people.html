@@ -12,9 +12,44 @@
 		  gtag('config', 'UA-143822462-1');
 		</script>
 
+		<!-- Structured data to index in Google Datasets search -->
+		<script type="application/ld+json">
+		{
+		  "@context":"https://schema.org/",
+		  "@type":"Dataset",
+		  "name":"SynthCity",
+		  "description":"SynthCity is a large scale synthetic point cloud dataset. Our dataset represents a synthetic Mobile Laser Scanner (MLS) in an Urban and Suburban environment. Developed to aid research in Machine Learning and Deep Learning for point cloud classification and segmentation.",
+		  "url":"http://www.synthcity.xyz",
+		  "identifier": "https://doi.org/10.5522/04/8851658.v1",
+		  "citation": "https://arxiv.org/abs/1907.04758",
+		  "keywords":[
+		     "Point Cloud > Mobile Laser Scanner",
+		     "Point Cloud > Classification",
+		     "Point Cloud > Segmentation",
+		     "Point Cloud > Synthetic"
+		  ],
+		  "creator":{
+		     "@type":"Person",
+		     "sameAs": "https://orcid.org/0000-0002-8582-138X",
+		     "url": "https://www.ucl.ac.uk/3dimpact/about/phd-researchers/david-griffiths",
+		     "givenName":"David",
+		     "familyName":"Griffiths",
+		     "name": "David Griffiths"
+		     },
+		  "distribution":
+		     {
+		        "@type":"DataDownload",
+		        "encodingFormat":"parquet",
+		        "contentUrl":"http://www.synthcity.xyz/download.html"
+		     }
+		}
+		</script>
+
 		<title>SynthCity - People</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="robots" content="index, follow"/>
+		<meta name="Description" content="SynthCity is a large scale synthetic point cloud dataset. Our dataset represents a synthetic Mobile Laser Scanner (MLS) in an Urban and Suburban environment. Developed to aid research in Machine Learning and Deep Learning for point cloud classification and segmentation."/>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="no-sidebar is-preload">
